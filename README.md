@@ -4,6 +4,29 @@
 
 Build a policy that decides who to introduce, when to wait and what to clarify, using incomplete reciprocal preferences and delayed feedback. Every person, conversation and outcome in this kit is synthetic.
 
+## Round 1 Research Submission
+
+Our Round 1 research submission report is available in [ROUND1_SUBMISSION.md](ROUND1_SUBMISSION.md).
+
+It covers:
+- Problem interpretation and 60-day decision horizon
+- Reciprocal feasibility analysis across public pools and synthetic scenarios
+- Policy architecture: terminal outcome probability modeling, FIFO hard-bundle clarification, and greedy first-fit matching
+- Experimental evaluation: pre-registered three-stage protocol (development, selection, confirmation) across 40 fresh seed clusters
+- Theoretical upper bounds and LP relaxation
+- Calibration diagnostics across the conversion funnel
+- Component ablation matrix across 19 configurations
+- Handling of missing constraints, delayed observations, and right-censoring
+- Key failure modes (sparse geography, distribution shift, feedback deadline attrition) and planned Round 2 improvements
+
+Generated figures:
+- [Figure 1: Confirmatory Primary Score Comparison](research/plots/fig1_primary_comparison.png)
+- [Figure 2: Per-Scenario Performance Breakdown](research/plots/fig2_scenario_breakdown.png)
+- [Figure 3: Outcome Funnel: Introduction to Qualified MSMI](research/plots/fig3_funnel.png)
+- [Figure 4: Feasibility Graph Density](research/plots/fig4_feasibility.png)
+- [Figure 5: Calibration Curve and Terminal Reliability Diagram](research/plots/fig5_calibration.png)
+- [Figure 6: Component Ablation Ranking](research/plots/fig6_ablation_dotplot.png)
+
 ## Start here
 
 1. Read the [final problem statement](PROBLEM_STATEMENT.md) or [download the PDF](docs/PROBLEM_STATEMENT.pdf).
