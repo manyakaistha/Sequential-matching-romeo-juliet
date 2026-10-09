@@ -1,0 +1,56 @@
+[
+  {
+    "seed": 101,
+    "variant": "development",
+    "success": true,
+    "variables": 6452,
+    "edges": 125,
+    "bound_msmi_per100": 0.6781068019361068,
+    "caveat": "Expected reward upper bound via HiGHS LP relaxation with 32-point Gauss-Hermite quadrature."
+  },
+  {
+    "seed": 101,
+    "variant": "sparse",
+    "success": true,
+    "variables": 1192,
+    "edges": 24,
+    "bound_msmi_per100": 0.12737802056248318,
+    "caveat": "Expected reward upper bound via HiGHS LP relaxation with 32-point Gauss-Hermite quadrature."
+  },
+  {
+    "seed": 101,
+    "variant": "cold_start",
+    "success": true,
+    "variables": 5744,
+    "edges": 110,
+    "bound_msmi_per100": 0.5601175262415337,
+    "caveat": "Expected reward upper bound via HiGHS LP relaxation with 32-point Gauss-Hermite quadrature."
+  },
+  {
+    "seed": 101,
+    "variant": "delayed",
+    "success": true,
+    "variables": 6452,
+    "edges": 125,
+    "bound_msmi_per100": 0.6632793937305057,
+    "caveat": "Expected reward upper bound via HiGHS LP relaxation with 32-point Gauss-Hermite quadrature."
+  },
+  {
+    "seed": 101,
+    "variant": "shift",
+    "success": true,
+    "variables": 6452,
+    "edges": 125,
+    "bound_msmi_per100": 0.6105586770827831,
+    "caveat": "Expected reward upper bound via HiGHS LP relaxation with 32-point Gauss-Hermite quadrature."
+  },
+  {
+    "seed": 101,
+    "variant": "drift",
+    "success": true,
+    "variables": 6452,
+    "edges": 125,
+    "bound_msmi_per100": 0.6605819902432334,
+    "caveat": "Expected reward upper bound via HiGHS LP relaxation with 32-point Gauss-Hermite quadrature."
+  }
+]

@@ -1,0 +1,95 @@
+{
+  "stage": "confirmation",
+  "seed_range": "3001-3040",
+  "num_seed_clusters": 40,
+  "episodes_per_policy": 240,
+  "total_episodes": 480,
+  "primary_metric": "msmi_per_100_arrived_members",
+  "summary": {
+    "greedy": {
+      "msmi_per_100": 0.3729,
+      "coverage": 0.3402,
+      "mutual_acceptance_rate": 0.1372,
+      "date_completion_rate": 0.7537,
+      "mean_ask_cost": 203.0,
+      "mean_latency_ms": 11.11
+    },
+    "simple_fifo": {
+      "msmi_per_100": 0.3312,
+      "coverage": 0.3403,
+      "mutual_acceptance_rate": 0.1371,
+      "date_completion_rate": 0.7794,
+      "mean_ask_cost": 203.0,
+      "mean_latency_ms": 15.52
+    }
+  },
+  "hypothesis_test": {
+    "paired_difference_msmi_per_100": -0.0417,
+    "sd_paired_difference": 0.1545,
+    "t_statistic": -1.706,
+    "df": 39,
+    "p_value_two_sided": 0.096,
+    "ci95_paired_t": [-0.0911, 0.0077],
+    "standardized_effect": -0.270,
+    "cluster_bootstrap_ci95": [-0.0896, 0.0042],
+    "cluster_counts": {
+      "favoring_candidate": 10,
+      "tied": 12,
+      "favoring_greedy": 18
+    },
+    "conclusion": "Fail to reject null hypothesis; candidate does not outperform greedy baseline."
+  },
+  "per_scenario_breakdown": {
+    "development": {
+      "greedy": 0.4625,
+      "simple_fifo": 0.3625,
+      "difference": -0.1000
+    },
+    "sparse": {
+      "greedy": 0.1000,
+      "simple_fifo": 0.0875,
+      "difference": -0.0125
+    },
+    "cold_start": {
+      "greedy": 0.4375,
+      "simple_fifo": 0.4750,
+      "difference": 0.0375
+    },
+    "delayed": {
+      "greedy": 0.4000,
+      "simple_fifo": 0.4000,
+      "difference": 0.0000
+    },
+    "shift": {
+      "greedy": 0.3750,
+      "simple_fifo": 0.3125,
+      "difference": -0.0625
+    },
+    "drift": {
+      "greedy": 0.4625,
+      "simple_fifo": 0.3500,
+      "difference": -0.1125
+    }
+  },
+  "conversion_funnel": {
+    "simple_fifo": {
+      "introductions": 18133,
+      "both_responded": 10576,
+      "both_responded_pct": 58.3,
+      "mutual_acceptance": 2434,
+      "mutual_acceptance_pct": 13.4,
+      "date_occurred": 1912,
+      "date_occurred_pct": 10.5,
+      "both_positive_second_meeting": 489,
+      "both_positive_second_meeting_pct": 2.7,
+      "qualified_msmi": 159,
+      "qualified_msmi_pct": 0.88
+    },
+    "greedy": {
+      "introductions": 17954,
+      "mutual_acceptance": 2428,
+      "date_occurred": 1849,
+      "qualified_msmi": 179
+    }
+  }
+}

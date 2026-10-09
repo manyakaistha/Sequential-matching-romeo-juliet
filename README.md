@@ -27,6 +27,14 @@ Generated figures:
 - [Figure 5: Calibration Curve and Terminal Reliability Diagram](research/plots/fig5_calibration.png)
 - [Figure 6: Component Ablation Ranking](research/plots/fig6_ablation_dotplot.png)
 
+Supporting research assets:
+- [Theoretical Foundations and LP Relaxation](research/THEORY.md)
+- [Prospective Experiment Registry](research/EXPERIMENT_REGISTRY.md)
+- [Literature Review and Applicability Audit](research/REFERENCES.md)
+- [LP Upper Bound Solver Script](research/upper_bound.py)
+- [Machine-Readable Confirmation Results](results/confirmation_summary.json)
+- [Machine-Readable LP Upper Bounds](results/upper_bound.json)
+
 ## Start here
 
 1. Read the [final problem statement](PROBLEM_STATEMENT.md) or [download the PDF](docs/PROBLEM_STATEMENT.pdf).
